@@ -1,0 +1,5 @@
+c++ 端通过 bazel 编译运行 `greeter_server.cpp` 启动 grpc server.
+
+python 端需要先通过 protoc 生成所需的文件 `python -m grpc_tools.protoc   --python_out=. --grpc_python_out=. helloworld.proto`
+
+然后直接运行即可 `python greeter_client.py`
