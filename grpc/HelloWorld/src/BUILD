@@ -8,7 +8,7 @@ grpc_proto_library(
 
 
 cc_binary(
-    name = "greeter_client",
+    name = "client",
     srcs = ["greeter_client.cc"],
     defines = ["BAZEL_BUILD"],
     deps = [
@@ -18,7 +18,7 @@ cc_binary(
 )
 
 cc_binary(
-    name = "greeter_server",
+    name = "server",
     srcs = ["greeter_server.cc"],
     defines = ["BAZEL_BUILD"],
     deps = [

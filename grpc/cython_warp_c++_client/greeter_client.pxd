@@ -6,5 +6,5 @@ cdef extern from "greeter_client.cc":
 cdef extern from "greeter_client.h":
   cdef cppclass GreeterClient:
     GreeterClient() except +
-    GreeterClient(string target) except +
     string SayHello(string user)
+    void Connect(string target)

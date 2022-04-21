@@ -21,7 +21,7 @@
 #include <string>
 
 #include <grpcpp/grpcpp.h>
-#include "helloworld.grpc.pb.h"
+#include "src/helloworld.grpc.pb.h"
 
 using grpc::Channel;
 using grpc::ClientContext;
